@@ -135,3 +135,42 @@ h2{font-size:clamp(1.4rem,3vw,2rem);margin:0}
 }
 .item figcaption span{font-weight:600}
 .item figcaption em{font-style:normal;opa
+/* --- Layout container (centers content & sets max width) --- */
+.container{
+  width:min(1120px,92%);
+  margin:0 auto;
+}
+
+/* --- Buttons row in hero --- */
+.btn-row{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+/* --- Section background & simple utility --- */
+.section-alt{background:#f7f7f8}
+.center{text-align:center}
+
+/* --- Gallery cards: bring back soft “card” look --- */
+.item{
+  position:relative;
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 8px 20px rgba(0,0,0,.06); /* soft elevation */
+}
+
+/* --- Footer grid spacing (keeps footer tidy on wide screens) --- */
+.footer-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:24px;
+}
+@media(min-width:900px){
+  .footer-grid{grid-template-columns:1.3fr .7fr 1fr;gap:28px}
+}
+
+/* --- Keep header nav from touching the edges --- */
+.header-inner{padding:12px 0}
