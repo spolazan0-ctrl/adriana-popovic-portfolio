@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Adriana Popovic — Sculptor</title>
+  <meta name="description" content="Portfolio of Adriana Popovic, sculptor. Selected works, exhibitions, and contact information.">
+  <link rel="icon" href="assets/favicon.png" type="image/png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Adriana Popovic — Sculptor"/>
+  <meta property="og:description" content="Selected works, exhibitions, and contact."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="assets/social-preview.jpg"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Adriana Popovic",
+    "jobTitle":"Sculptor",
+    "url":"https://example.com",
+    "image":"assets/portrait.jpg",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">Adriana Popovic</a>
+      <nav class="nav">
+        <a href="#works">Works</a>
+        <a href="#about">About</a>
+        <a href="#exhibitions">Exhibitions</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <h1>Sculptor</h1>
+      <p>Material, space, and light in conversation.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#works">View Works</a>
+        <a class="btn btn-outline" href="#about">Artist Bio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Selected Works</h2>
+        <div class="filters" role="tablist" aria-label="Filter works">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="Sculpture" role="tab">Sculpture</button>
+          <button class="filter" data-filter="Installations" role="tab">Installations</button>
+          <button class="filter" data-filter="Public Art" role="tab">Public Art</button>
+        </div>
+      </div>
+      <div class="gallery" id="gallery">
+        <!-- Items: replace with real images + data-category -->
+        <figure class="item" data-category="Sculpture">
+          <img src="assets/work-1.jpg" alt="Work 1 — sculpture title"/>
+          <figcaption><span>Untitled I</span><em>Bronze, 2024</em></figcaption>
+        </figure>
+        <figure class="item" data-category="Sculpture">
+          <img src="assets/work-2.jpg" alt="Work 2 — sculpture title"/>
+          <figcaption><span>Untitled II</span><em>Marble, 2023</em></figcaption>
+        </figure>
+        <figure class="item" data-category="Installations">
+          <img src="assets/work-3.jpg" alt="Work 3 — installation title"/>
+          <figcaption><span>Light Field</span><em>Mixed media, 2023</em></figcaption>
+        </figure>
+        <figure class="item" data-category="Public Art">
+          <img src="assets/work-4.jpg" alt="Work 4 — public art title"/>
+          <figcaption><span>River Gate</span><em>Steel, 2022</em></figcaption>
+        </figure>
+        <figure class="item" data-category="Installations">
+          <img src="assets/work-5.jpg" alt="Work 5 — installation title"/>
+          <figcaption><span>Echo</span><em>Glass & sound, 2022</em></figcaption>
+        </figure>
+        <figure class="item" data-category="Sculpture">
+          <img src="assets/work-6.jpg" alt="Work 6 — sculpture title"/>
+          <figcaption><span>Fold</span><em>Wood, 2021</em></figcaption>
+        </figure>
+      </div>
+      <div class="center"><button class="btn btn-outline" id="view-all">Open Lightbox</button></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section-alt">
+    <div class="container grid-2">
+      <img src="assets/portrait.jpg" alt="Portrait of Adriana Popovic" class="rounded shadow"/>
+      <div>
+        <h2>About the Artist</h2>
+        <p>Adriana Popovic is a sculptor whose practice explores form, balance, and the dialogue between material and space. Her work ranges from small-scale bronze pieces to large public installations. Born in [City/Country], Adriana studied at [School/Program] and has exhibited in [Cities/Regions].</p>
+        <p>Through a process-led approach, she embraces the tactile and the structural, inviting viewers to move around the work and encounter shifting relationships of light and shadow.</p>
+        <a class="btn btn-primary" href="assets/Adriana-Popovic-CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exhibitions & Press -->
+  <section id="exhibitions" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Exhibitions</h2>
+        <ul class="timeline">
+          <li><strong>2025</strong> — Solo, <em>Contours</em>, Gallery Name, City</li>
+          <li><strong>2024</strong> — Group, <em>Material Voices</em>, Museum Name, City</li>
+          <li><strong>2023</strong> — Public Commission, <em>River Gate</em>, City</li>
+          <li><strong>2022</strong> — Group, <em>Light and Mass</em>, Gallery, City</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Press & Publications</h2>
+        <ul class="list">
+          <li>“The Poise of Form,” <em>Art Review</em>, 2024.</li>
+          <li>Interview with A. Popovic, <em>Sculpture Today</em>, 2023.</li>
+          <li>“Public Art Now,” <em>City Journal</em>, 2022.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container grid-2">
+      <div>
+        <h2>Contact</h2>
+        <p>For inquiries, commissions, or press, please email:</p>
+        <p class="contact-line"><a href="mailto:studio@adrianapopovic.com">studio@adrianapopovic.com</a></p>
+        <p class="contact-line"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></p>
+      </div>
+      <form class="form" action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo logo-invert">Adriana Popovic</div>
+        <p>Sculpture & installations</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul class="list">
+          <li><a href="#works">Works</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#exhibitions">Exhibitions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <p>City, Country</p>
+        <p><a href="mailto:studio@adrianapopovic.com">studio@adrianapopovic.com</a></p>
+      </div>
+    </div>
+    <div class="copyright">© 2025 Adriana Popovic</div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img id="lightbox-img" alt="Artwork enlarged"/>
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
